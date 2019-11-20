@@ -4,6 +4,6 @@ import rootReducer from '../reducers/index'
 
 export default createStore(
     rootReducer,
-    {movieList: {color: 'yellow', movies: ['a', 'b', 'c']}},
+    {movieList: {color: 'yellow', movies: [{'title': 'a'}, {'title': 'b'}, {'title': 'c'}]}  },
     applyMiddleware(thunk)
 );
